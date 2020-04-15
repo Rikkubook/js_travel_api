@@ -1,0 +1,30 @@
+.a_decorLine{
+    position: relative;
+    margin-top: 134px;
+    margin-bottom: 76px;
+    border-bottom: 1px dashed $blue;
+    &__arrow{
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: 2px solid $blue;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        &::before{
+            content: "";
+            display: inline-block;
+            border: solid;
+            border-width: 8px 6px 0 6px;
+            border-color: $blue transparent transparent transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
